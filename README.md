@@ -18,14 +18,7 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 # Contest prep
 
 ## 🐺 C4: Contest prep
-- [ ] Rename this repo to reflect contest date (if applicable)
-- [ ] Rename contest H1 below
-- [ ] Add link to report form in contest details below
-- [ ] Update pot sizes
-- [ ] Fill in start and end times in contest bullets below.
-- [ ] Move any relevant information in "contest scope information" above to the bottom of this readme.
 - [ ] Add matching info to the [code423n4.com public contest data here](https://github.com/code-423n4/code423n4.com/blob/main/_data/contests/contests.csv))
-- [ ] Delete this checklist.
 
 ## ⭐️ Sponsor: Contest prep
 - [ ] Make sure your code is thoroughly commented using the [NatSpec format](https://docs.soliditylang.org/en/v0.5.10/natspec-format.html#natspec-format).
@@ -39,18 +32,21 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ---
 
-# Sponsorname contest details
-- TBD main award pot
-- TBD gas optimization award pot
+# OpenSea Contest Details
+- $1,000,000 total maximum award pot, including $30,000 gas optimizations pot
 - Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/YYYY-MM-sponsorName-contest/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2020-05-opensea-seaport/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
-- Starts TBD XXX XXX XX 20:00 UTC
-- Ends TBD XXX XXX XX 19:59 UTC
+- Starts May 20 2022 20:00 UTC
+- Ends June 3 2022 19:59 UTC
 
-This repo will be made public before the start of the contest. (C4 delete this line when made public)
+**IMPORTANT NOTE**: Unlike most public Code4rena contests, you MUST be a Certified Warden OR successfully complete KYC/OFAC screening in order to receive payment from this contest.
 
-[ ⭐️ SPONSORS ADD INFO HERE ]
+How the $1,000,000 maximum pot works:
+- Contest minimum pot is $130,000 (including $30k gas optimization pot).
+- If ANY valid medium severity issue is found, contest pot increases to $430,000.
+- If ANY valid high severity issue is found, contest pot increases to $1,000,000.
+
 
 ---
 
