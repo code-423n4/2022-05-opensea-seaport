@@ -20,7 +20,7 @@ How the $1,000,000 maximum pot works:
 
 Seaport is a marketplace protocol for safely and efficiently buying and selling NFTs. Each listing contains an arbitrary number of items that the offerer is willing to give (the "offer") along with an arbitrary number of items that must be received along with their respective receivers (the "consideration").
 
-See the [documentation](https://github.com/ProjectOpenSea/seaport/docs/SeaportDocumentation.md), the [interface](https://github.com/ProjectOpenSea/seaport/contracts/interfaces/SeaportInterface.sol), and the full [interface documentation](https://docs.opensea.io/v2.0/reference/seaport-overview) for more information on Seaport.
+See the [documentation](https://github.com/ProjectOpenSea/seaport/blob/main/docs/SeaportDocumentation.md), the [interface](https://github.com/ProjectOpenSea/seaport/blob/main/contracts/interfaces/SeaportInterface.sol), and the full [interface documentation](https://docs.opensea.io/v2.0/reference/seaport-overview) for more information on Seaport.
 
 ## In Scope
 
