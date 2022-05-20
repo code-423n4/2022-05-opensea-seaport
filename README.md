@@ -6,7 +6,7 @@
 - Starts May 20, 2022 20:00 UTC
 - Ends June 3, 2022 19:59 UTC
 
-**IMPORTANT NOTE**: IMPORTANT NOTE: Unlike most public Code4rena contests, prior to receiving payment from this contest you MUST become a Certified Warden (successfully complete KYC and pass screening for OFAC sanctions). You do not have to complete this process before competing or submitting bugs.
+**IMPORTANT NOTE**: Unlike most public Code4rena contests, prior to receiving payment from this contest you MUST become a Certified Warden (successfully complete KYC and pass screening for OFAC sanctions). You do not have to complete this process before competing or submitting bugs.
 
 How the $1,000,000 maximum pot works:
 - Contest minimum pot is $130,000 (including $30k gas optimization pot).
