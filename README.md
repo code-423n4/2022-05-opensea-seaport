@@ -18,19 +18,6 @@ How the $1,000,000 maximum pot works:
 
 # Seaport
 
-[Seaport](https://github.com/ProjectOpenSea/seaport) is a marketplace contract for safely and efficiently creating and fulfilling orders for ERC721 and ERC1155 items.
-
-## Table of Contents
-
-- [Background](#background)
-- [Deployments](#deployments)
-- [Install](#install)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Background
-
 Seaport is a marketplace protocol for safely and efficiently buying and selling NFTs. Each listing contains an arbitrary number of items that the offerer is willing to give (the "offer") along with an arbitrary number of items that must be received along with their respective receivers (the "consideration").
 
 See the [documentation](https://github.com/ProjectOpenSea/seaport/docs/SeaportDocumentation.md), the [interface](https://github.com/ProjectOpenSea/seaport/contracts/interfaces/SeaportInterface.sol), and the full [interface documentation](https://docs.opensea.io/v2.0/reference/seaport-overview) for more information on Seaport.
