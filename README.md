@@ -1,5 +1,5 @@
 # OpenSea Seaport Contest Details
-- $1,000,000 total maximum award pot, including $30,000 gas optimizations pot
+- &#36;1,000,000 total maximum award pot, including &#36;30,000 gas optimizations pot
 - Join [C4 Discord](https://discord.gg/code4rena) to register
 - Submit findings [using the C4 form](https://code4rena.com/contests/2022-05-opensea-seaport-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
@@ -8,10 +8,10 @@
 
 **IMPORTANT NOTE**: Unlike most public Code4rena contests, prior to receiving payment from this contest you MUST become a Certified Warden (successfully complete KYC and pass screening for OFAC sanctions). You do not have to complete this process before competing or submitting bugs.
 
-How the $1,000,000 maximum pot works:
-- Contest minimum pot is $130,000 (including $30k gas optimization pot).
-- If ANY valid medium severity issue is found, contest pot increases to $430,000.
-- If ANY valid high severity issue is found, contest pot increases to $1,000,000.
+How the &#36;1,000,000 maximum pot works:
+- Contest minimum pot is &#36;130,000 (including &#36;30k gas optimization pot).
+- If ANY valid medium severity issue is found, contest pot increases to &#36;430,000.
+- If ANY valid high severity issue is found, contest pot increases to &#36;1,000,000.
 
 
 ---
