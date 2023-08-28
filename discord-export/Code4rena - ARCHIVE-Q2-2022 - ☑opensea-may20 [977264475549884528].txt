@@ -1,0 +1,973 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q2-2022 / ☑opensea-may20
+==============================================================
+
+[05/20/2022 5:43 PM] itsmetechjay
+👋 Hello and welcome to the contest channel for the $1M USDC **OpenSea Seaport** contest!
+
+📆 Contest opens May 20, 2022 at 20:00 UTC and runs through June 3, 2022 at 19:59 UTC (14 days).
+
+Please give a warm welcome to the OpenSea Seaport team, particularly @0age and @d1ll0n who will be available for questions either here in the channel or via DM.
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this contest, consider enabling notifications for this channel. 🐺 ⏰
+
+Contest Page: https://code4rena.com/contests/2022-05-opensea-seaport-contest
+
+{Embed}
+https://code4rena.com/contests/2022-05-opensea-seaport-contest
+Code4rena OpenSea Seaport contest
+$1,000,000 USDC
+20 May 2022—3 June 2022
+Code4rena - ARCHIVE-Q2-2022 - ☑opensea-may20 [977264475549884528].txt_Files/C4-banner-7C19B.png
+
+{Reactions}
+C4Keycap (13) 🔥 (12) chefskiss 
+
+[05/20/2022 5:44 PM] 0age
+https://twitter.com/opensea/status/1527705996549685248?s=20&t=ldVzYXVk0uWqXNm9t2gRtg
+
+{Embed}
+OpenSea (@opensea)
+https://twitter.com/opensea/status/1527705996549685248?s=20&t=ldVzYXVk0uWqXNm9t2gRtg
+Introducing Seaport, a brand new web3 marketplace protocol for safely and efficiently buying and selling NFTs.
+
+With an emphasis on flexibility and optimizations, Seaport has been built to support new and evolving use-cases for where NFTs are heading.
+
+https://t.co/3lUQIQm0km
+Twitter
+
+{Reactions}
+🔥 (4) 
+
+[05/20/2022 8:15 PM] czar102
+About the pot mechanics, what if 2 meds are found? Is it still $430,000 or is there just a maximum of $100k per mark (assuming no 0.9 multiplier?)?
+
+
+[05/20/2022 8:16 PM] cloudellie
+Yeah, I believe it's just ">0 Mediums = pot size increases to $430k" 🙂
+
+
+[05/20/2022 8:17 PM] cloudellie
+Apart from that the mechanics are the same as a typical C4 contest, afaik - @🧦 sockdrawer | C4 please correct me if I'm wrong!
+
+{Reactions}
+👍 
+
+[05/20/2022 8:18 PM] sockdrawermoney
+You’re correct. One valid finding in each severity level will push up the total pool size
+
+{Reactions}
+thankyou (2) 
+
+[05/20/2022 8:18 PM] czar102
+What if 5 meds and 1 high is found? Does the high increase also the payout for meds? Then meds would receive more if a valid high is submitted.
+
+
+[05/20/2022 8:19 PM] sockdrawermoney
+If even 1 high is found, the whole pool becomes 1m
+
+{Reactions}
+yay (2) 
+
+[05/20/2022 8:19 PM] sockdrawermoney
+And then same mechanisms as a typical contest
+
+{Reactions}
+thankyou 
+
+[05/20/2022 8:20 PM] sockdrawermoney
+So in terms of number of findings, same as how any other contest works
+
+
+[05/20/2022 8:29 PM] cloudellie
+👉 **Important scope info in the README**
+Hey all, just a note we added some important scope info to the README file for this contest about 15 minutes ago (so, 15 min after launch time). Please be sure to read the README carefully as the OpenSea Seaport team has done a great job of clarifying what they're looking for. 
+
+Should help you use your time effectively! 💪
+
+{Reactions}
+👍🏻 
+
+[05/20/2022 8:38 PM] shung69
+documentation & interface links in README is wrong.
+current -> https://github.com/ProjectOpenSea/seaport/docs/SeaportDocumentation.md
+should be -> https://github.com/ProjectOpenSea/seaport/blob/main/docs/SeaportDocumentation.md
+
+
+[05/20/2022 8:42 PM] cloudellie
+working on it, please hold
+
+
+[05/20/2022 8:42 PM] cloudellie
+And thank you!
+
+{Reactions}
+👍 (2) 
+
+[05/20/2022 8:45 PM] cloudellie
+Fixed
+
+
+[05/20/2022 9:10 PM] 0age
+Hey everyone — just wanted to pop in and thank everyone that's poking around our contracts for the Seaport protocol audit competition
+
+
+[05/20/2022 9:11 PM] 0age
+I'd love to answer any questions to get people up to speed on how the protocol works or clarify aspects of the competition and what's in scope / out of scope
+
+
+[05/20/2022 9:11 PM] 0age
+feel free to @ me as you start to dig in
+
+
+[05/20/2022 9:13 PM] 100proof
+What UTC time range will you be around to answer questions?
+
+
+[05/20/2022 9:13 PM] 100proof
+(i.e. when will you sleep? 😛 )
+
+
+[05/20/2022 9:16 PM] jderyl.cap
+@0age  
+One of the coolest repo ive seen, all hail them kings!!
+Im literally drooling over the files and tests? Praise the lord for such beautiful testing setup. Good work indeed.❤️‍🔥 😍
+
+
+[05/20/2022 9:20 PM] 0age
+US timezone is ideal, but I'll do my best to get to whatever questions come in async too :awesome:
+
+
+[05/20/2022 9:21 PM] 0age
+Much appreciated — looking forward to getting into the nitty gritty together
+
+{Reactions}
+❤️‍🔥 
+
+[05/20/2022 9:27 PM] 100proof
+Business hours? Like 8am - 6pm?
+
+
+[05/20/2022 9:29 PM] _t1nt1n
+nevermind, misread
+
+
+[05/20/2022 10:01 PM] rag.e
+Are libraries used in scope?
+
+
+[05/20/2022 10:02 PM] 0age
+The libraries are only used as part of the tests which are out of scope, so no (but if you find anything there do let us know)
+
+
+[05/20/2022 10:02 PM] rag.e
+Gotcha, I saw Murky was imported a few times but couldn't find it used
+
+
+[05/20/2022 10:28 PM] antonttc
+forge install is giving me error: `pathspec '2022-05-opensea-seaport/lib' did not match any file(s) known to git`.
+Does anyone run into the same issue?
+
+
+[05/20/2022 10:35 PM] 0age
+This is following the steps in the README?
+
+
+[05/20/2022 10:36 PM] antonttc
+yes
+
+
+[05/20/2022 10:37 PM] 0age
+oh are you pulling down the C4 repo?
+
+
+[05/20/2022 10:37 PM] 0age
+might just try the main one: https://github.com/ProjectOpenSea/seaport
+
+{Embed}
+https://github.com/ProjectOpenSea/seaport
+GitHub - ProjectOpenSea/seaport: Seaport is a marketplace protocol ...
+Seaport is a marketplace protocol for safely and efficiently buying and selling NFTs. - GitHub - ProjectOpenSea/seaport: Seaport is a marketplace protocol for safely and efficiently buying and sell...
+Code4rena - ARCHIVE-Q2-2022 - ☑opensea-may20 [977264475549884528].txt_Files/seaport-AB091
+
+
+[05/20/2022 10:37 PM] antonttc
+ah okay
+
+
+[05/20/2022 10:38 PM] antonttc
+I guess i can assume everything is the same
+
+
+[05/20/2022 10:38 PM] 0age
+for now yeah
+
+
+[05/20/2022 10:38 PM] 0age
+you could always use the same commit too
+
+{Reactions}
+👍🏻 (2) 
+
+[05/20/2022 11:52 PM] 100proof
+The  `yarn` tests are running just fine on my machine but I'm getting this when I try to run `forge test`
+
+```
+Running 1 test for test/foundry/conduit/ConduitExecute.t.sol:ConduitExecuteTest
+[FAIL. Reason: Setup failed: No such file or directory (os error 2)] setUp() (gas: 0)
+Test result: FAILED. 0 passed; 1 failed; finished in 4.45ms
+
+Running 1 test for test/foundry/MatchOrders.t.sol:MatchOrders
+[FAIL. Reason: Setup failed: No such file or directory (os error 2)] setUp() (gas: 0)
+Test result: FAILED. 0 passed; 1 failed; finished in 4.46ms
+
+Running 1 test for test/foundry/FulfillOrderTest.sol:FulfillOrderTest
+[FAIL. Reason: Setup failed: No such file or directory (os error 2)] setUp() (gas: 0)
+Test result: FAILED. 0 passed; 1 failed; finished in 4.48ms
+```
+
+
+[05/20/2022 11:52 PM] 100proof
+I'm sure it's just something small.
+
+
+[05/21/2022 1:07 AM] 0age
+Ah see the updated readme on the main repo
+
+
+[05/21/2022 1:07 AM] 0age
+Need to pass it a flag
+
+{Reactions}
+👍 (2) 
+
+[05/21/2022 2:10 AM] bearprince
+for the execute functions in conduit.sol why not just return a true or false instead of returning a 4 byte value?
+
+
+[05/21/2022 5:12 AM] 0age
+Mostly just a little added assurance; it’s relatively easy to mix up call status and a boolean return value unless you’re careful (and anyone integrating with a conduit absolutely needs to be careful!)
+
+
+[05/21/2022 5:14 AM] 0age
+Similar pattern exists for EIP-1271 and it does help disambiguate that you’re calling an interface that’s actually compliant with the EIP
+
+
+[05/21/2022 5:15 AM] 0age
+Plus it’s basically the same overhead (unless you include the extra 3 bytes of runtime code which just bumps up deployment cost / contract size)
+
+
+[05/21/2022 6:05 AM] stermi
+do we know which commit has been used to create the c4 repo? at this point I would prefer to use the original one
+
+{Reactions}
+✨ 
+
+[05/21/2022 8:21 AM] kaiziron
+hi, is this opensea contest only for certified wardens to participate? which means i have to participate in at least 3 contest before in order to participate in this contest?
+
+
+[05/21/2022 8:29 AM] qedk
+if you're here already, you can participate, but you will need to do KYC if you're eligible for rewards, which is also the requirement for _certified_ role, and the current _certified_ role becomes _*certified+*_ might be wrong...
+
+{Reactions}
+👍 (5) 
+
+[05/21/2022 1:21 PM] illilli000
+When you say the libraries are out of scope, you only mean these: https://github.com/ProjectOpenSea/seaport/tree/main/lib, and not these: https://github.com/ProjectOpenSea/seaport/tree/main/reference/lib or these: https://github.com/ProjectOpenSea/seaport/tree/main/contracts/lib, is that right?
+
+
+[05/21/2022 2:22 PM] 0age
+Oooh no the /contracts/lib and /contracts/conduit/lib folders are very much in scope
+
+
+[05/21/2022 2:23 PM] 0age
+I meant the _external_ libraries used in /contracts/test (really all the tests are out of scope)
+
+{Reactions}
+thankyou (2) 
+
+[05/21/2022 5:46 PM] trust90
+`
+As all offer and consideration items are allocated against one another in memory, there are scenarios in which the actual received item amount will differ from the amount specified by the order — notably, this includes items with a fee-on-transfer mechanic.
+`
+Is this to say that every scenario in which recipient receives less than the specified amount considered out of scope? Cuz that's a pretty massive discount for the protocol.
+
+
+[05/21/2022 6:32 PM] cloudellie
+This is correct -- thank you! I'm trying to get the C4 docs updated ASAP as I know it's confusing.
+
+
+[05/21/2022 7:03 PM] 0age
+If the token in question is fee-on-transfer or doesn’t credit receiver 100 tokens when you call transferFrom with amount 100 then yeah that’s non-standard behavior (and honestly should be discouraged IMHO)
+
+{Reactions}
+👍 
+
+[05/21/2022 7:04 PM] 0age
+But if you _do_ want to support precise payouts of fee-on-transfer tokens with Seaport you can still do it by calling through a wrapper contract that checks balances before and after like uniswap router does for fee-on-transfer tokens with minReceived
+
+
+[05/21/2022 7:05 PM] 0age
+Or can even compute post-transfer amounts in real-time with a zone + tipping
+
+
+[05/21/2022 9:08 PM] trust90
+I understand but that doesn't answer the question
+
+
+[05/21/2022 9:14 PM] 0age
+There are lots of scenarios where a recipient receiving less than the specified amount would be solidly in scope and would represent a high-severity bug — but if the scenario is dependent on idiosyncratic behavior of a specific, non-compliant flavor of token then it’s not in scope because the token is not designed in a way that makes it “safe” to exchange by default, if that makes sense
+
+{Reactions}
+👍 
+
+[05/21/2022 9:18 PM] 0age
+Two examples that are pointed out in the docs are fee-on-transfer tokens (remediation is to check the balance after the swap) and tokens that have some modifiable state other than just their balance / approvals through standard ERC20/721/1155 methods (like tokens that have collateral locked up inside them, i.e. an initial transfer to a recipient with an onReceived hook that makes a reentrant call into the token with collateral and removes it before transferring the token)
+
+{Reactions}
+SilvNoted 
+
+[05/21/2022 9:24 PM] 0age
+The alternative is to perform balance checks after transfer by default for every token, which adds a lot of unnecessary overhead in the vast majority of cases where behavior conforms to the eip specs (I.e. getting a recipient’s dai balance, sending them 100 dai, checking the balance again, and ensuring the delta is 100 dai is a real waste when you know that compliant erc20s like dai will either faithfully increment the recipient’s balance by 100 or will revert / return false)
+
+
+[05/22/2022 3:00 AM] premm.eth
+Jest getting going on this. I was able to get all the tests to pass using hardhat, but I think there are forge tests as well? I am new to forge, so just setting it up. Got this error: . ". . . lib/murky/src/Merkle.sol": No such file or directory"
+
+
+[05/22/2022 3:50 AM] 0age
+You follow these steps? Where does it go wrong for you? https://github.com/ProjectOpenSea/seaport#foundry-tests
+
+{Embed}
+https://github.com/ProjectOpenSea/seaport
+GitHub - ProjectOpenSea/seaport: Seaport is a marketplace protocol ...
+Seaport is a marketplace protocol for safely and efficiently buying and selling NFTs. - GitHub - ProjectOpenSea/seaport: Seaport is a marketplace protocol for safely and efficiently buying and sell...
+Code4rena - ARCHIVE-Q2-2022 - ☑opensea-may20 [977264475549884528].txt_Files/seaport-1E41E
+
+
+[05/22/2022 3:57 AM] premm.eth
+ok, yeah that's what I needed. will try it.
+
+
+[05/22/2022 4:53 AM] Deleted User
+There are other ways to solve fee-on-transfer without checking balanceOf each time.
+
+
+[05/22/2022 5:24 AM] 0age
+Yeah, you could also have it be part of the item type to indicate that something’s a fee-on-transfer and only check the balance then (though you could still end up with less that expected if you didn’t use that type), or is there a totally different approach I’m not considering?
+
+
+[05/22/2022 6:36 AM] Deleted User
+Yeah or just forbid fee on transfer tokens
+
+
+[05/22/2022 7:03 AM] 0age
+How do you forbid them at the protocol level without falling back to some kind of whitelist? And who owns that whitelist?
+
+
+[05/22/2022 8:11 AM] Deleted User
+On the first interaction with token you do the balance check and then add token to mapping if it is without fee-on-transfer.
+Revert if token is non standard.
+On the next interaction you are just accessing the mapping from storage.
+Thats how I do in my contracts to avoid additional runtime gas usage.
+
+
+[05/22/2022 8:14 AM] Deleted User
+The only thing is if someone makes fee-on-transfer enable/disable function in the token contract and bypass this check. Or if someone modifies balanceOf function.
+
+This however does not bother me much because I have additional checks for mis-behavior in place but could be a case in your contract probably. For example, deposit fake token and withdraw something else valuable.
+
+
+[05/22/2022 10:54 AM] 0age
+That’s a pretty clever solution! SLOAD ain’t cheap though (and, as you note, won’t catch dynamic fee-on-transfer)
+
+
+[05/22/2022 1:57 PM] 0x1f8b
+I can assume reference is out of scope, right, unless there's a logical mismatch, no gas, right?
+
+
+[05/22/2022 2:14 PM] 0age
+Reference bugs are in-scope but low-severity
+
+{Reactions}
+👍 
+
+[05/22/2022 3:25 PM] orion4105
+Supposing we found an issue but it's repeated on two files (contracts)
+
+
+[05/22/2022 3:25 PM] orion4105
+shall we fill them in one report
+
+
+[05/22/2022 3:26 PM] orion4105
+or seperated
+
+
+[05/22/2022 3:56 PM] elyx0
+i can make a token that only add fees randomly :Weeb_Smile:
+
+{Reactions}
+thisScroll 
+
+[05/22/2022 3:56 PM] elyx0
+ah you wrote it
+
+
+[05/22/2022 3:58 PM] Deleted User
+Yeah it is impossible to prevent someone using fee-on-transfer tokens.
+Only forbid basic ones.
+However it is better to organize contract code the way that does not break logic when someone uses fake tokens.
+You can never trust contract calls.
+
+Kudos to the guy who hacked the hackers using this method: https://github.com/Defi-Cartel/salmonella
+
+{Embed}
+https://github.com/Defi-Cartel/salmonella
+GitHub - Defi-Cartel/salmonella: Wrecking sandwich traders for fun ...
+Wrecking sandwich traders for fun and profit. Contribute to Defi-Cartel/salmonella development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q2-2022 - ☑opensea-may20 [977264475549884528].txt_Files/salmonella-3008A
+
+
+[05/22/2022 3:59 PM] elyx0
+it's nathan
+
+
+[05/22/2022 3:59 PM] elyx0
+(or so I thought)
+
+
+[05/22/2022 4:00 PM] elyx0
+but salmonella was by emitting fake events as well
+
+
+[05/22/2022 4:54 PM] orion4105
+Supposing we found an issue but it's repeated on two files (contracts)
+shall we fill them in one report
+or seperated
+
+
+[05/22/2022 8:12 PM] 0age
+same bug multiple contracts probably best as single finding
+
+{Reactions}
+👍 
+
+[05/22/2022 8:14 PM] 0age
+you can still use Seaport with fee-on-transfer tokens, you're just going to end up with less tokens in your wallet at the end than the # you give on the order (just like you would if you gave that # to a direct call to `transferFrom` on that token)
+
+{Reactions}
+👍 
+
+[05/22/2022 9:05 PM] sockdrawermoney
+Fuzzy consensus on this, but probably ideal to group them in this case. 
+
+You can see a whole discussion on nuances around this topic among wardens and judges here: https://github.com/code-423n4/org/issues/8
+
+{Embed}
+https://github.com/code-423n4/org/issues/8
+Similar exploits under a single issue · Issue #8 · code-423n4/org
+There are cases where there are multiple instances of an exploit within a single contests and it&#39;s not clear whether they should be filed as separate submissions or as one submission with m...
+Code4rena - ARCHIVE-Q2-2022 - ☑opensea-may20 [977264475549884528].txt_Files/8-56A11
+
+
+[05/22/2022 9:13 PM] sockdrawermoney
+that thread also contains one of my all-time favorite @cmichel-isms:
+> If you squint hard enough, the single core issue of everything is that the code is incorrect
+
+{Reactions}
+❤️ (5) 
+
+[05/22/2022 9:40 PM] orion4105
+Thanks
+
+{Reactions}
+hi5 
+
+[05/23/2022 12:57 AM] sawmon.and.natalie
+If an issue/fix fixes a computation and also optimizes gas would that be under QA report or Gas Op? 
+
+Would it also be considered low or medium if it doesn’t affect any funds or tokens?
+
+
+[05/23/2022 1:12 AM] sockdrawermoney
+Re low/med, check the tl;dr rubric and make your best call
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2022 - ☑opensea-may20 [977264475549884528].txt_Files/image0-4E2D5.jpg
+
+
+[05/23/2022 1:12 AM] sockdrawermoney
+https://docs.code4rena.com/roles/wardens/judging-criteria#estimating-risk-tl-dr
+
+{Embed}
+https://docs.code4rena.com/roles/wardens/judging-criteria
+Judging criteria
+
+
+[05/23/2022 1:16 AM] sockdrawermoney
+If there is an issue that fixing would _also_ optimize gas, I am unsure about whether to submit in gas optz report as well as an issue and would love to have one of our @🏛judges weigh in on that.
+
+
+[05/23/2022 4:09 AM] p12473
+can @0age or @d1ll0n  confirm which commit from the main repo is being used for the audit?
+
+
+[05/23/2022 6:35 AM] 0age
+Best one to use is probably the last one on the Friday that the competition kicked off, `49799ce156d979132c9924a739ae45a38b39ecdd`
+
+{Reactions}
+🤝 (3) 
+
+[05/23/2022 6:36 AM] 0age
+defer to core team if there's a different commit that's better
+
+
+[05/23/2022 7:00 AM] p12473
+thanks ser
+
+
+[05/23/2022 6:28 PM] cloudellie (pinned)
+**❗ Important reminder: **Unlike most public Code4rena contests, prior to receiving payment from this contest, you **MUST** become a Certified Warden (successfully complete KYC and pass screening for OFAC sanctions). You do not have to complete this process before competing or submitting bugs.
+
+👉  Certified warden application: https://code4rena.com/certified-contributor-application/
+
+📚  Docs: https://docs.code4rena.com/roles/wardens/certified-wardens
+
+
+[05/23/2022 6:28 PM] cloudellie
+Pinned a message.
+
+{Reactions}
+👍🏻 
+
+[05/24/2022 5:34 PM] premm.eth
+Is anyone planning on making an OpenZeppelin style video going over Seaport. I think this could save a lot of time, to just get the general overview of how the contracts work.
+
+{Reactions}
+💯 
+
+[05/25/2022 1:19 AM] 100proof
+The video for the Forgotten Runes contest (https://www.youtube.com/watch?v=nUzl6-_o8e8) was extremely helpful.
+
+{Reactions}
+👍 
+
+[05/25/2022 1:49 PM] jc9307
+https://twitter.com/SolidityFridays/status/1529191253484744704 
+Their videos are very informative  (see Linum Labs / YT)
+
+here the link: https://www.youtube.com/watch?v=juP22m8kiKM
+
+{Embed}
+Solidity Fridays (@SolidityFridays)
+https://twitter.com/SolidityFridays/status/1529191253484744704
+This week on #SolidityFridays we’re covering the brand new Seaport contracts from @opensea ⛴
+
+Can’t wait to get back in the swing of things, we know you’ve been waiting. Who knows? We might even have a special guest⚓️
+Code4rena - ARCHIVE-Q2-2022 - ☑opensea-may20 [977264475549884528].txt_Files/FTjHVd0WAAI3ob9-9DA2A.jpg
+Twitter
+
+{Embed}
+Linum Labs
+https://www.youtube.com/watch?v=juP22m8kiKM
+Seaport from OpenSea | Solidity Fridays
+Join us for a deep dive into the Seaport contracts by OpenSea. 
+
+For more Linum Labs updates follow us on Twitter:
+https://twitter.com/SolidityFridays
+
+Catch more Solidity Fridays episodes on Twitch:
+https://www.twitch.tv/linumlabs
+Code4rena - ARCHIVE-Q2-2022 - ☑opensea-may20 [977264475549884528].txt_Files/maxresdefault-D30AA.jpg
+
+{Reactions}
+👍 (3) cyberheart 
+
+[05/26/2022 4:12 AM] zer0dot
+Hey folks, lots of cool stuff here and finally getting to investigating! Just wondering, sorry if this was asked before, but what's the quickest way to generate a gas snapshot for a specific function? I'm just trying to get the `--gas-report` from the Consideration `fulfillBasicOrder` function, I got it by running the generic test (everything in lite mode) with `--gas-report` enabled, but I can't seem to find exactly which file I'm supposed to isolate to get *just* that :KEK:
+
+{Reactions}
+👋 (2) 
+
+[05/26/2022 4:13 AM] zer0dot
+`FulfillBasicOrderTest` isn't it, `FulfillOrderTest` isn't it either, weird because I specifically see `context.consideration.fulfillBasicOrder` in the former
+
+
+[05/26/2022 4:14 AM] zer0dot
+wondering if someone can just help me figure this out quicker so I can put on my optimizoor socks
+
+
+[05/28/2022 9:51 PM] zer0dot
+Ok ended up running a custom profile with 100 fuzz runs
+
+
+[05/28/2022 9:51 PM] zer0dot
+And IR off
+
+
+[05/28/2022 9:51 PM] zer0dot
+:akeek:
+
+{Reactions}
+😅 (3) 
+
+[05/29/2022 2:00 AM] zer0dot
+y'all weren't kidding with the "IR takes forever" thing :kekhands:
+
+{Reactions}
+😭 (4) 
+
+[05/31/2022 10:44 AM] zakum_
+im trying to run seaport test locally using foundry but im getting
+
+$ FOUNDRY_PROFILE=test forge test
+Contract code size is 24952 bytes and exceeds 24576 bytes (a limit introduced in Spurious Dragon).
+...
+
+can someone pls help me out?  seaport should work in foundry based on the readme here: https://github.com/ProjectOpenSea/seaport#foundry-tests
+
+{Embed}
+https://github.com/ProjectOpenSea/seaport
+GitHub - ProjectOpenSea/seaport: Seaport is a marketplace protocol ...
+Seaport is a marketplace protocol for safely and efficiently buying and selling NFTs. - GitHub - ProjectOpenSea/seaport: Seaport is a marketplace protocol for safely and efficiently buying and sell...
+Code4rena - ARCHIVE-Q2-2022 - ☑opensea-may20 [977264475549884528].txt_Files/seaport-E24D5
+
+
+[05/31/2022 3:34 PM] 0age
+Did you modify the source? If so you can also try overriding the contract size limit in the config
+
+
+[05/31/2022 10:39 PM] czar102
+Would be really great if it was possible to extend the contest to give a weekend more, not sure if that’s possible or if there are other wardens for whom it would be helpful…
+
+{Reactions}
+👀 (5) 🤣 (7) 💯 
+
+[06/01/2022 6:07 PM] hack3r_0m
+yea, even a day or so extension would be good since it is weekend
+
+
+[06/01/2022 7:41 PM] 0x4non
+Quick question, can a team that got all members certified participate on the contest?
+
+
+[06/01/2022 7:45 PM] oridabush
+In addition to that, what happens in case that some members are not certified?
+
+
+[06/02/2022 12:41 AM] acegawd
+@d1ll0n  or @0age DM
+
+
+[06/02/2022 9:01 AM] d1ll0n
+added you
+
+
+[06/02/2022 9:33 AM] chomtana
+Did opensea develop your own UI for Seaport? Or you will passed this work to independent DApps developers?
+
+
+[06/02/2022 2:51 PM] rotcivegaf
+👍
+
+
+[06/02/2022 2:55 PM] 0age
+https://twitter.com/z0age/status/1532374442705227776?s=21
+
+{Embed}
+0age (@z0age)
+https://twitter.com/z0age/status/1532374442705227776?s=21
+Thanks @sinahab for having me on Into the Bytecode — highly recommend giving it a listen if you’re interested in learning more about the technical aspects of Seaport!
+Code4rena - ARCHIVE-Q2-2022 - ☑opensea-may20 [977264475549884528].txt_Files/FUQTk1jXEAMu-YJ-2F003.jpg
+Twitter
+
+{Reactions}
+👍 (9) 
+
+[06/02/2022 3:39 PM] dmitriia
+The same, please
+
+
+[06/02/2022 3:54 PM] sockdrawermoney
+for visibility on this, answered the same in #questions https://discord.com/channels/810916927919620096/810931711609143326/981889218596966452
+
+
+[06/03/2022 7:08 PM] 0age
+I’m supportive of a 4-hour extension!
+
+{Reactions}
+🔥 (8) 
+
+[06/03/2022 7:24 PM] cloudellie
+OK @🐺wardens, you've got it - a 4-hour extension. Make the most of it! 
+
+(Details here: https://discord.com/channels/810916927919620096/810929015509483554/982364020478726275)
+
+
+[06/03/2022 8:33 PM] oridabush
+And I was in hurry all day to make it 🥲
+
+{Reactions}
+empathy (6) 
+
+[06/03/2022 8:33 PM] oridabush
+https://tenor.com/view/thumbs-up-double-thumbs-up-like-agreed-yup-gif-11663223
+
+{Embed}
+https://tenor.com/view/thumbs-up-double-thumbs-up-like-agreed-yup-gif-11663223
+Code4rena - ARCHIVE-Q2-2022 - ☑opensea-may20 [977264475549884528].txt_Files/thumbs-up-double-thumbs-up-2B74B.png
+
+{Reactions}
+🔥 (3) 
+
+[06/04/2022 12:02 AM] C4
+**🚨 CONTEST ALERT**
+
+@🐺wardens  The OpenSea Seaport contest is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: the OpenSea team will review the findings over the next couple of days, and then we'll pass them off to the judge. Keep an eye on #📢announcements  for regular updates on how the contest is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a gardener if you have questions along the way!
+
+{Reactions}
+🔥 (8) hi5 (8) C4Keycap (5) 
+
+[06/04/2022 12:09 AM] 0age
+https://twitter.com/z0age/status/1532876355607531520
+
+{Embed}
+0age (@z0age)
+https://twitter.com/z0age/status/1532876355607531520
+The Seaport @code4rena competition has now ended — thanks again to the many reviewers who participated! 
+
+A summary of relevant findings will be made available soon, but I'd like to share some key findings and give a heads-up that we'll be deploying Seaport v1.1 to address them.
+Twitter
+
+{Reactions}
+🔥 (17) 
+
+[06/04/2022 12:58 AM] hickuphh3
+will there be a mitigation contest? 🙂
+
+{Reactions}
+😄 (3) 
+
+[06/05/2022 1:57 PM] chomtana
+I bet that there won't be a mitigation contest. But there will be another Seaport 1.1 contest and so on until there aren't any medium and high issues left.
+
+
+[06/06/2022 3:13 PM] peritoflores
+Hi this link is broken https://t.co/oyaQd0KL9j
+
+
+[06/06/2022 3:40 PM] kartoonjoy
+@0age
+
+
+[06/06/2022 3:55 PM] csanuragjain
+I think the correct link is https://github.com/ProjectOpenSea/seaport/blob/main/CONTRIBUTORS.md
+
+
+[06/07/2022 2:48 AM] sm4rty_
+@0age  is it necessary to do that, I mean if I didn't do. Will i be disqualified? I am a bit confused with PR.
+
+
+[06/07/2022 3:02 PM] 0x1f8b
+First we should have the report to see if some of them was accepted, isn't it?
+
+
+[06/07/2022 4:41 PM] 0age
+Just clarifying for everyone — any findings you submitted as part of the competition are being evaluated independently of the PRs that we're taking right now (the _judges_ evaluate those). The PRs are just if you'd _also_ like to be a contributor to Seaport!
+
+
+[06/07/2022 4:41 PM] 0age
+You do _not_ need to submit a PR in order for your findings to be accepted as valid
+
+{Reactions}
+👍 (2) 
+
+[06/07/2022 4:42 PM] 0age
+(but you _should_ if you want to ensure that the finding makes its way into Seaport 1.1 in time as the formal competition review period will take a few weeks)
+
+
+[06/10/2022 4:41 PM] yarpo#1601
+@0age Hi! Do you know when the judging process is due to finish?
+
+
+[06/13/2022 1:21 PM] 0age
+https://twitter.com/z0age/status/1536330990070534144
+
+{Embed}
+0age (@z0age)
+https://twitter.com/z0age/status/1536330990070534144
+Seaport 1.1 has been deployed — huge thanks to all the contributors, reviewers, auditors and integrators who made this release possible. 
+
+https://t.co/q6kW51K4hS
+Twitter
+
+{Reactions}
+🔥 (5) 
+
+[06/13/2022 1:22 PM] 0age
+I think the main portion of the judging process is due to kick off today
+
+{Reactions}
+👍 (2) 
+
+[07/24/2022 10:56 PM] zakum_
+hi there, any reason opensea didnt go all-in foundry and still has some hardhat tests? more broadly, im wondering what are some tests that can only be done in hardhat but not foundry.
+
+
+[07/26/2022 12:34 AM] AuditsAreUS#8939
+The reason is that you can test for language specific bugs. It's good if your testing language is different to you source language.
+
+{Reactions}
+👍 
+
+[07/28/2022 11:58 PM] ellahi
+:PauseChamp:
+
+{Reactions}
+😂 (3) 👀 (2) 
+
+[07/29/2022 5:28 PM] liveactionllamac4
+🤑 🎉 Awards for **OpenSea Seaport**:
+
+$292,640.04 USDC » Spearbit (@Gerard Persoon, @hrkrshnn, @axic, @leonardoalt)
+$246,009.97 USDC » @Saw-mon and Natalie 
+$132,893.57 USDC » @cmichel 
+$88,255.25 USDC » @0xsanson 
+$38,226.88 USDC » @frangio 
+$27,024.46 USDC » broccoli (@shw, @Jonah1005)
+$26,547.82 USDC » @Ori Dabush 
+$24,736.67 USDC » @hyh 
+$23,032.04 USDC » @Ming | WATCHPUG 
+$22,572.59 USDC » @yarpo 
+$6,888.63 USDC » @IllIllI 
+$5,202.72 USDC » @shung🌞🌈 
+$4,262.13 USDC » @Chom 
+$4,250.36 USDC » @Dravee 
+$3,342.34 USDC » zkhorse ( @karmacoma, @horsefacts)
+$3,234.56 USDC » @sces60107 | GimelSec 
+$2,776.01 USDC » @peritoflores 
+$2,557.04 USDC » @hickuphh3 
+$2,474.50 USDC » @cheapgemmer(hack3r-0m) 
+$2,457.05 USDC » @ilan 
+$2,429.38 USDC » @cccz 
+$2,412.41 USDC » @csanuragjain 
+$2,342.02 USDC » @rfa 
+$2,341.16 USDC » @thinklab 
+$2,339.78 USDC » @twojoy 
+$2,329.88 USDC » @foobar 
+$2,326.75 USDC » mayo
+$2,104.59 USDC » @scaraven 
+$1,946.40 USDC » kebabsec (@okkothejawa, @FlameHorizon)
+$1,923.74 USDC » @sorryNotsorry 
+$1,923.74 USDC » @zzzitron 
+$1,904.83 USDC » @tintin 
+$1,892.40 USDC » hubble (ksk2345, @shri4net)
+$745.43 USDC » @0x1f8b 
+$667.27 USDC » @Noam Yakov 
+$611.29 USDC » @djxploit 
+$570.27 USDC » @alpharush 
+$516.48 USDC » @Czar102 
+$485.02 USDC » 0x29A (@anon, @Rotcivegaf)
+$474.36 USDC » @sirhashalot 
+$454.28 USDC » @gzeon 
+$450.19 USDC » @0xFar5eer 
+$444.37 USDC » @Zer0dot 
+$442.32 USDC » @DefSec 
+$440.69 USDC » Hawkeye (@0xwags, @0xmint)
+$439.39 USDC » @Ignacio 
+$438.35 USDC » @joestakey 
+$437.19 USDC » @MiloTruck 
+$435.74 USDC » @sashik_eth 
+$434.95 USDC » @Kaden 
+$434.95 USDC » @sach1r0 
+$434.95 USDC » @TomJ 
+$434.58 USDC » @ellahi 
+$434.51 USDC » @TerrierLover 
+$434.35 USDC » @Sloth 
+$434.35 USDC » @delfin454000 
+$434.35 USDC » @hake | SmartSek 
+$434.35 USDC » @RoiEvenHaim 
+$434.35 USDC » @Tadashi 
+
+🏁 Findings summary
+---------------------------
+High risk findings: 11 total, 2 unique
+Med risk findings: 5 total, 2 unique
+Gas optimization reports: 45
+QA reports: 29
+
+Awards will be distributed on Polygon within the next 1-2 weeks. Congratulations all! 💸 💸 💸
+
+{Reactions}
+🎉 (38) 🔥 (31) C4Keycap (20) 🍾 (16) mario_luigi_dance (11) 🥳 (10) 🔆 (10) chefskiss (4) 🚀 (4) praisethesun (3) 💸 (2) 
+
+[07/29/2022 5:36 PM] alextheentreprenerd
+Grats!!!
+
+{Reactions}
+💜 (5) 
+
+[07/29/2022 5:36 PM] shung69
+https://cdn.discordapp.com/emojis/999521947476037725.gif?size=40&quality=lossless
+
+{Embed}
+https://cdn.discordapp.com/emojis/999521947476037725.gif?size=40&quality=lossless
+Code4rena - ARCHIVE-Q2-2022 - ☑opensea-may20 [977264475549884528].txt_Files/999521947476037725-6ECAA.gif
+
+{Reactions}
+hi5 (3) chefskiss 
+
+[07/29/2022 6:11 PM] ligaratus_
+congrats!
+
+{Reactions}
+🎉 (4) chefskiss 
+
+[07/29/2022 7:33 PM] rustyrabbit
+When will the report be out ?
+
+
+[07/29/2022 7:35 PM] slokh
+Thank you to everyone who participated in making Seaport safe! Appreciate all the reports that came in!
+
+{Reactions}
+hi5 (8) 
+
+[07/29/2022 8:14 PM] road220
+Thanks, great to see opensea V2 contest!
+
+{Reactions}
+🔥 
+
+[07/29/2022 9:42 PM] zer0dot
+Now this is a report I want to read
+
+{Reactions}
+same (6) 
+
+[07/29/2022 9:42 PM] zer0dot
+:Woah:
+
+
+[07/30/2022 12:54 AM] bearprince
+Do the wardens listed include both the ones who are verified or not, or just the verified ones.
+
+
+[08/01/2022 7:38 AM] cloudellie
+The announcement includes everyone with a valid finding, whether or not they have completed the certification process. 
+
+However, we cannot send awards to people who don’t complete certification.  So if you’re on the list and aren’t yet certified, now’s the time.
+
+
+[08/03/2022 1:18 PM] zakum_
+hey, does anyone know how does seaport generate its optimized-out files? more generally, did seaport do anything to bypass eip170 spurious dragon error?
+
+
+==============================================================
+Exported 154 message(s)
+==============================================================
